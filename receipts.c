@@ -62,7 +62,7 @@ int main() {
     totalfarmProduce_cost = farmProduce_cost * NumfarmProduce;
     
    //total cost calculation
-    total_cost = bread_cost + soda_cost + spice_cost + farmProduce_cost;
+    total_cost = totalbread_cost + totalsoda_cost + totalspice_cost + totalfarmProduce_cost;
     
     //tax calculation
     tax = tax_percentage * total_cost;
@@ -71,15 +71,13 @@ int main() {
    gross_cost = total_cost + tax;
     
     // Print variables
-    printf("totalbread_cost: %.2f \n"); 
-    printf("totalsoda_cost: %.2f \n");
-    printf("totalspice_cost: %.2f \n");
-    printf("totalfarmProduce_cost: %.2f \n");
-    printf("\n");
-    printf("total_cost: %.2f \n");
-    printf("tax: %.2f \n");
-    printf("\n");
-    printf("gross_cost: %.2f \n");
+printf("totalbread_cost: %.2f \n", totalbread_cost);
+printf("totalsoda_cost: %.2f \n", totalsoda_cost);
+printf("totalspice_cost: %.2f \n", totalspice_cost);
+printf("totalfarmProduce_cost: %.2f \n", totalfarmProduce_cost);
+printf("total_cost: %.2f \n", total_cost);
+printf("tax: %.2f \n", tax);
+printf("gross_cost: %.2f \n", gross_cost);
 
     return 0;
 }
